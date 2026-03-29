@@ -290,6 +290,9 @@ ul{list-style:none}
   font-size:13px;
 }
 
+/* ===== DARK MODE COMPARE ===== */
+.dark-mode-compare{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:800px;margin:0 auto}
+
 /* ===== RESPONSIVE ===== */
 @media(max-width:960px){
   .nav-links{display:none}
@@ -311,4 +314,5 @@ ul{list-style:none}
   .footer-inner{flex-direction:column;gap:32px}
   .footer-links{flex-direction:column;gap:24px}
   .section-cta{padding:56px 24px}
+  .dark-mode-compare{grid-template-columns:1fr}
 }
