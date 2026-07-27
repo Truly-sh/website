@@ -306,6 +306,40 @@ ul{list-style:none}
 .faq-item h3{font-size:16px;font-weight:700;margin-bottom:8px}
 .faq-item p{font-size:14px;color:var(--muted);line-height:1.6}
 
+/* ===== PRICING ===== */
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:start}
+.pricing-card{
+  padding:36px 32px;border-radius:var(--radius-lg);
+  background:var(--bg-1);border:1px solid var(--border);
+  text-align:center;display:flex;flex-direction:column;align-items:center;
+}
+.pricing-card-highlight{
+  border:2px solid var(--accent-1);
+  box-shadow:var(--shadow-1);
+  position:relative;padding-top:28px;
+}
+.pricing-card-highlight .pill{margin-bottom:12px}
+.pricing-card h3{font-family:var(--font-heading);font-size:22px;font-weight:700;margin-bottom:8px}
+.pricing-price{
+  font-family:var(--font-heading);font-size:clamp(36px,4vw,48px);font-weight:700;
+  line-height:1.1;margin-bottom:4px;
+}
+.pricing-price span{font-size:18px;font-weight:600;color:var(--muted)}
+.pricing-period{font-size:14px;color:var(--soft);margin-bottom:24px}
+.pricing-features{
+  list-style:none;width:100%;text-align:left;
+  display:flex;flex-direction:column;gap:10px;margin-bottom:28px;
+}
+.pricing-features li{
+  font-size:14px;color:var(--muted);line-height:1.6;
+  padding-left:24px;position:relative;
+}
+.pricing-features li::before{content:'\2713';position:absolute;left:0;color:var(--accent-1);font-weight:700}
+.pricing-cta{width:100%}
+.pricing-grid-single{max-width:400px;margin:0 auto;grid-template-columns:1fr}
+.pricing-note{text-align:center;margin-top:24px;font-size:15px;color:var(--muted)}
+.pricing-note a{color:var(--accent-1);font-weight:600}
+
 /* ===== CTA ===== */
 .section-cta{
   padding:80px 24px;text-align:center;
@@ -368,7 +402,8 @@ ul{list-style:none}
   .feature-grid,
   .steps-grid,
   .steps-grid-4,
-  .faq-grid{grid-template-columns:1fr}
+  .faq-grid,
+  .pricing-grid{grid-template-columns:1fr}
   .footer-inner{flex-direction:column;gap:32px}
   .footer-links{flex-direction:column;gap:24px}
   .section-cta{padding:56px 24px}
